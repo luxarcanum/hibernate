@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" auto-import="true" assembly="AWHibernateTestApp" namespace="AWHibernateTestApp.Models">
+  <class name="NeedRequirement" table="Need_Requirement" dynamic-update="true" >
+    <cache usage="read-write"/>
+    <id name="Id" column="Id" type="long">
+      <generator class="native" />
+    </id>
+    <property name="Need_Date"  />
+    <property name="Need_LOB" />
+    <property name="ts_0700" />
+    <property name="ts_0730" />
+    
+  </class>
+</hibernate-mapping>
