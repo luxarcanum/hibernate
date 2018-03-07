@@ -18,7 +18,7 @@ namespace AWHibernateTestApp
             NHibernate.Cfg.Configuration cfg = new NHibernate.Cfg.Configuration();
             cfg.SetProperty("dialect", "NHibernate.Dialect.MsSql2012Dialect");
             cfg.SetProperty("connection.driver_class", "NHibernate.Driver.SqlClientDriver");
-            cfg.SetProperty("connection.connection_string", "Server=n131dopsvrsql11;Initial Catalog=Development_Testing;Integrated Security=True;Connect Timeout=30;Encrypt=True;TrustServerCertificate=True;ApplicationIntent=ReadWrite;MultiSubnetFailover=False;");
+            cfg.SetProperty("connection.connection_string", "Server=MyConnectionString");
             cfg.AddAssembly("AWHibernateTestApp");
             ISessionFactory dbSession = cfg.BuildSessionFactory();
             */
